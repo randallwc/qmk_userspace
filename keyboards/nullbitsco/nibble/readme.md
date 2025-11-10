@@ -1,3 +1,9 @@
+# Todo
+
+- [ ] create a bongo cat via firmware
+- [ ] create a snail via firmware
+- [ ] fix the control button and windows button by using via
+
 # Notes
 
 forked from here
