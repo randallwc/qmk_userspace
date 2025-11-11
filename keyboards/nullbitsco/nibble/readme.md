@@ -14,6 +14,14 @@ last via enabled keymaps
 
 https://github.com/qmk/qmk_firmware/tree/8f6d2ac53cdde6d0befc9f86c326f56620dcfcc0/keyboards/nullbitsco/nibble
 
+last snail map
+
+https://github.com/qmk/qmk_firmware/tree/2c191e21c280a78e71767a73f31cd7017382186c/keyboards/nullbitsco/nibble/keymaps/snailmap
+
+last bongo cat with via support
+
+https://github.com/qmk/qmk_firmware/tree/e64815511303584787b623c12ac8bab7dccb0034/keyboards/nullbitsco/nibble/keymaps/oled_bongocat
+
 last user keymaps
 
 https://github.com/qmk/qmk_firmware/tree/e64815511303584787b623c12ac8bab7dccb0034/keyboards/nullbitsco/nibble
