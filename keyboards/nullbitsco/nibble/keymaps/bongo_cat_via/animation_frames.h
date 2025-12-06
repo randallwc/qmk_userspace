@@ -16,7 +16,7 @@
 #pragma once
 #ifdef OLED_ENABLE
 
-// Enable OLED bitmpa compression selectively.
+// Enable OLED bitmpap compression selectively.
 #define USE_OLED_BITMAP_COMPRESSION
 
 #define NUM_IDLE_FRAMES 5
