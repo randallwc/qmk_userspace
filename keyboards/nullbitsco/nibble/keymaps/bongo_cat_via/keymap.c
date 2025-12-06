@@ -14,17 +14,6 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-/*
- * todo
- *
- * 1. [done] make bongo cat work for oled
- * 2. [done] make dial spin the volume
- * 3. [done] make dial press mute (KC_F13 right now)
- * 4. [done] esc should also be grave when shifted
- * 5. keys need to be right because the oled is at top of keyboard
- * 5. add rgb controls to fn layer
- */
-
 #include QMK_KEYBOARD_H
 #include "animation_frames.h"
 
