@@ -1,6 +1,6 @@
 {
     "userspace_version": "1.1",
     "build_targets": [
-        ["nullbitsco/nibble", "bongo_cat_via"]
+        ["nullbitsco/nibble", "default"]
     ]
 }
