@@ -1,4 +1,38 @@
 CompileFlags:
-  Add: [-Wno-unknown-attributes, -Wno-maybe-uninitialized, -Wno-unknown-warning-option]
-  Remove: [-W*, -mmcu=*, -mcpu=*, -mfpu=*, -mfloat-abi=*, -mno-unaligned-access, -mno-thumb-interwork, -mcall-prologues, -D__has_include*]
+  Add: [
+    "-Wno-unknown-attributes",
+    "-Wno-maybe-uninitialized",
+    "-Wno-unknown-warning-option",
+
+    # Correct AVR target
+    "--target=avr",
+    "-mmcu=atmega32u4",
+
+    # Required so clangd recognizes AVR inline asm and "z" constraints
+    "-fasm-blocks",
+    "-Xclang", "-target-feature", "-Xclang", "+lpm",
+
+    # clangd-only parsing mode
+    "-fsyntax-only"
+  ]
+
+  Remove: [
+    # AVR-GCC-only flags clang cannot parse
+    "-mlra",
+    "-mrelax",
+    "-mcall-prologues",
+    "-flto",
+    "-fno-inline-small-functions",
+
+    # Remove conflicting or incompatible options
+    "-W*",
+    "-mmcu=*",
+    "-mcpu=*",
+    "-mfpu=*",
+    "-mfloat-abi=*",
+    "-mno-unaligned-access",
+    "-mno-thumb-interwork",
+    "-D__has_include*"
+  ]
+
   Compiler: clang

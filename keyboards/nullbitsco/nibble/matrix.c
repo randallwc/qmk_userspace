@@ -29,7 +29,7 @@ static void init_pins(void) {
     for (uint8_t pin = 0; pin < MATRIX_MUX_COLS; pin++) {
         gpio_set_pin_output(col_pins[pin]);
     }
-    
+
     // Unselect cols
     for (uint8_t bit = 0; bit < MATRIX_MUX_COLS; bit++) {
         gpio_write_pin_low(col_pins[bit]);
@@ -87,10 +87,10 @@ void matrix_init_custom(void) {
 bool matrix_scan_custom(matrix_row_t current_matrix[]) {
     bool changed = false;
 
-    //Set col, read rows
+    // Set col, read rows
     for (uint8_t current_col = 0; current_col < MATRIX_COLS; current_col++) {
         changed |= read_rows_on_col(current_matrix, current_col);
     }
-    
+
     return (uint8_t)changed;
 }
