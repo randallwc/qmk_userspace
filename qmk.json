@@ -1,6 +1,7 @@
 {
     "userspace_version": "1.1",
     "build_targets": [
-        ["nullbitsco/nibble", "default"]
+        ["nullbitsco/nibble", "snail_map"],
+        ["nullbitsco/nibble", "bongo_cat"]
     ]
 }
